@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contador</title>
 
+    </head>
+    <body>
+        <h1>contador</h1>
+        <p>0</p>
+        <button onclick="add()">mais</button>
+        <button onclick="por()">multiplicar</button>
+        <input placeholder="ponga un valor">
+        <script>
+            let numero = 0
+
+            function add() {
+                numero = numero + 1 
+                tela()
+            }
+
+            function tela() {
+                const p = document.querySelector('p')
+                p.innerText = numero
+            }
+            
+            
+        </script>
+    </body>
+   </html>
