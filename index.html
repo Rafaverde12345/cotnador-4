@@ -11,22 +11,24 @@
         <input placeholder="ponga un valor">
         
         <script>
-            let numero = 0
 
+            //declaro que existe un numero
+            let numero = 0
+            
+            //logica de el input y cuanto se va a sumar
             function add() {
                 const input = document.querySelector('input')
                 let novo = input.value
-                //input.value = ''
                 numero = numero + parseInt(novo)
                 tela()
                 console.log(novo)
             }
-
+            //actualiza la pantalla "render"
             function tela() {
                 const p = document.querySelector('p')
                 p.innerText = numero
             }
-
+            //actualiza la pantalla nada mas entrar
             tela()
         </script>
     </body>
