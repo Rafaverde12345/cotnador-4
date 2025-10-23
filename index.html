@@ -8,8 +8,8 @@
         <h1>contador</h1>
         <p>0</p>
         <button onclick="add()">mais</button>
-        <button onclick="por()">multiplicar</button>
         <input placeholder="ponga un valor">
+        <button onclick="pegar()">botar</button>
         <script>
             let numero = 0
 
@@ -22,12 +22,8 @@
                 const p = document.querySelector('p')
                 p.innerText = numero
             }
-            
-            function pegar() {
-                const input = document.querySelector(input)
-                input.value = numero
-                console.log(numero)
-            }
+
+            tela()
         </script>
     </body>
    </html>
