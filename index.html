@@ -6,16 +6,20 @@
     </head>
     <body>
         <h1>contador</h1>
-        <p>0</p>
+        <p></p>
         <button onclick="add()">mais</button>
         <input placeholder="ponga un valor">
-        <button onclick="pegar()">botar</button>
+        
         <script>
             let numero = 0
 
             function add() {
-                numero = numero + 1 
+                const input = document.querySelector('input')
+                let novo = input.value
+                //input.value = ''
+                numero = numero + parseInt(novo)
                 tela()
+                console.log(novo)
             }
 
             function tela() {
